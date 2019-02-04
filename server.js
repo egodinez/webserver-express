@@ -45,7 +45,7 @@ app.get('/convert', function(req, res, next) {
     //https: //s3-us-west-2.amazonaws.com/serpico-whoisapp/sugar/643cf68b-fc7f-4028-8680-3646024542fd.mp3
     //C:\\Users\\erig3\\Desktop\\node\\06-webserver\\
 
-    let filePath = `${ __dirname }\\file.mp3`;
+    let filePath = `${ __dirname }/file.mp3`;
     console.log(filePath);
     const file = fs.createWriteStream(filePath);
     const request = https.get(`https://s3-us-west-2.amazonaws.com/serpico-whoisapp/${ company }/${ fileID }`, function(response) {
