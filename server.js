@@ -54,12 +54,13 @@ app.get('/convert', function(req, res, next) {
 
         file.on('finish', function() {
             //file.close(cb);
-            res.sendFile(filePath);
+
         });
 
         //res.sendFile('./public/assets/file.mp3');
 
         //res.setHeader('Content-disposition', `attachment; filename=file.mp3`);
+        res.sendFile(filePath);
     });
 
 
