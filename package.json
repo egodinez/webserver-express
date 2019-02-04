@@ -12,6 +12,8 @@
     "license": "ISC",
     "dependencies": {
         "express": "^4.16.4",
-        "hbs": "^4.0.1"
+        "ffmpeg": "0.0.4",
+        "hbs": "^4.0.1",
+        "memory-streams": "^0.1.3"
     }
 }
